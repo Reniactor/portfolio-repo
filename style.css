@@ -35,6 +35,7 @@ header {
     position: fixed;
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 10;
     width: 100%;
     height: 15%;
@@ -47,8 +48,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
-    width: 98.5%;
+    height: 65%;
+    width: 99.5%;
+    border-bottom: 1px outset var(--color-10);
 }
 
 #logo {
@@ -195,6 +197,7 @@ section {
     #welcome-svgs-container {
         padding-top: 1.5rem;
     }
+
     
     .skills-svg {
         width: 28%;
@@ -220,18 +223,35 @@ section {
         height: 100vh;
     }
 
+    #navbar {
+        border-bottom-style: none;
+    }
+
     #welcome-section {
         flex-direction: column;
         align-items: center;
-    }
-
-    #welcome-image-header {
-        font-size: 2rem;
+        margin-top: 0;
     }
 
     #welcome-text-container, #welcome-image-container {
         align-items: center;
         width: 100%;
+    }
+
+    #welcome-text-container {
+        margin-bottom: 10vh;
+    }
+
+    #welcome-image-header {
+        font-size: 4.5rem;
+    }
+
+    #welcome-svgs-container {
+        padding-top: 0.5rem;
+    }
+
+    .skills-svg {
+        width: 18vw;
     }
 
     #navbar {

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-60: #1E1E1E;
+    --color-30: #f2f2f2;
+    --color-10: #FFB01F;
+    --header-font:  "Open sans", sans-serif;
+    --p-font: "Roboto serif", serif;
+    --titles-font: "Playfair display", serif; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-60);
+    width: 100vw;
+    font-family: var(--p-font);
+    overflow-x: hidden;
+}
+
+header {
+    top: 0;
+    left: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    height: 15%;
+    font-family: var(--header-font);
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98.5%;
+}
+
+#logo {
+    max-width: 130px;
+}
+
+#nav__toggle {
+    display: none;
+}
+
+#navbar-links {
+    display: flex;
+    font-size: 1.81rem;
+    width: auto;
+    font-family: var(--header-font);
+    font-weight: lighter;
+    list-style: none;
+    gap: 5vw;
+}
+
+a {
+    color: var(--color-30);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-10);
+}
+
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 85%;
+    gap: 5%;
+    margin-top: 23.7vh;
+}
+
+section {
+    margin-top: 23.7vh;
+}
+
+#welcome-text-container {
+    display: flex;
+    color: var(--color-30);
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+#welcome-header {
+    font-size: 3.5rem/*45px*/;
+    font-weight: 500;
+    padding-top: 6rem;
+}
+
+#span-name, .tint-accent {
+    color: var(--color-10);
+}
+
+#svgs {
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 5rem;
+}
+
+.welcome-section-svg {
+    width: 85px;
+    fill: var(--color-10);
+    height: 100%;
+}
+
+.welcome-section-svg:hover {
+    fill: var(--color-30);
+}
+
+#welcome-paragraph {
+    font-size: 2rem;
+}
+
+#welcome-image-container {
+    display: flex;
+    color: var(--color-30);
+    font-family: var(--titles-font);
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+    width: 35%;
+    height: auto;
+    margin-top: 4rem;
+}
+
+#welcome-image-header {
+    font-size: 2.91vmax;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0.35em;
+    border-bottom: 0.2px solid var(--color-10);
+    font-family: var(--titles-font);
+    font-weight: 400;
+}
+
+#welcome-svgs-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2.2rem;
+    gap: 2rem;
+}
+
+#first-row, #second-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#second-row {
+    justify-content: space-around;
+}
+
+.skills-svg {
+    fill: var(--color-10);
+    width: 20%;
+}
+
+@media screen and (max-width: 1460px) {
+    #welcome-header {
+        font-size: 2.9rem;
+    }
+
+    #welcome-paragraph {
+        font-size: 1.5rem;
+    }
+
+    #welcome-image-header {
+        font-size: 3rem;
+    }
+
+    #welcome-svgs-container {
+        padding-top: 1.5rem;
+    }
+    
+    .skills-svg {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    #welcome-image-header {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+    body {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #welcome-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #welcome-image-header {
+        font-size: 2rem;
+    }
+
+    #welcome-text-container, #welcome-image-container {
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #navbar-links {
+        display: none;
+    }
+
+    #logo {
+        max-width: 100%;
+    }
+    
+    #nav__toggle {
+        top: 50px;
+        right: 30px;
+        position: absolute;
+        display: block;
+        border-style: none;
+    }
+
+    #hamburger {
+        position: relative;
+        display: block;
+    }
+
+    #hamburger,
+    #hamburger::before,
+    #hamburger::after {
+        height: 0.08rem;
+        width: 2.5rem;
+        background: #FFB01F;
+        transition: transform 250ms ease-in-out;
+    }
+
+    #hamburger::before,
+    #hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+
+    #hamburger::before { bottom: 10px;}
+    #hamburger::after { top: 10px;}
+}
+
+/* ¡DEBAJO DE 1040PX DE WIDTH YA SERÁ VISTA DE TLF!
+*/
+
+
+
+
+

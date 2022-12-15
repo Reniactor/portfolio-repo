@@ -304,6 +304,13 @@ section {
 */
 
 
-
+@media screen and (max-width: 724px) {
+    #welcome-header {
+        font-size: 3rem;
+    }
+    #welcome-image-header {
+        font-size: 3.5rem;
+    }
+}
 
 

@@ -48,9 +48,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65%;
+    height: 70%;
     width: 99.5%;
-    border-bottom: 1px outset var(--color-10);
 }
 
 #logo {
@@ -155,7 +154,7 @@ section {
     padding-bottom: 0.35em;
     border-bottom: 0.2px solid var(--color-10);
     font-family: var(--titles-font);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #welcome-svgs-container {
@@ -251,7 +250,7 @@ section {
     }
 
     .skills-svg {
-        width: 18vw;
+        width: 18vh;
     }
 
     #navbar {

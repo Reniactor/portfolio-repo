@@ -261,6 +261,12 @@ section {
         height: 100vh;
     }
 
+    #nav__toggle > #hamburger {
+        position: fixed;
+        top: 4%;
+        right: 2%;
+    }
+
     #navbar {
         border-bottom-style: none;
     }
